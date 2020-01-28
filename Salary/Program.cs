@@ -1,19 +1,19 @@
 ﻿using System;
 
-namespace Salary
+nmspace Salary
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string name, id, position;
+            string nm, id, position;
             var type=0;
             double gs = 0;
             
             Console.WriteLine("Enter employee id: ");
             id = Console.ReadLine();
-            Console.WriteLine("Enter employee name: ");
-            name= Console.ReadLine();
+            Console.WriteLine("Enter employee nm: ");
+            nm= Console.ReadLine();
             Console.WriteLine("Enter employee position: ");
             position = Console.ReadLine();
             
@@ -43,7 +43,7 @@ namespace Salary
                 Console.WriteLine("Please enter valid gross salary");
             }
             
-            var calculator=new SalaryCalculator(id,name,position);
+            var calculator=new SalaryCalculator(id,nm,position);
             
             switch (type)
             {
@@ -51,7 +51,7 @@ namespace Salary
                 {
                     var sal = SalaryCalculator.CalculateSalary(gs);
                     Console.WriteLine($"ID: {calculator.Id}\n");
-                    Console.WriteLine($"Name: {calculator.Name}\n");
+                    Console.WriteLine($"nm: {calculator.nm}\n");
                     Console.WriteLine($"Position: {calculator.Position}\n");
                 
                     Console.WriteLine($"Monthly salary: {sal}\n");
@@ -74,7 +74,7 @@ namespace Salary
                     var sal = SalaryCalculator.CalculateSalary(gs,hours);
                 
                     Console.WriteLine($"ID: {calculator.Id}\n");
-                    Console.WriteLine($"Name: {calculator.Name}\n");
+                    Console.WriteLine($"nm: {calculator.nm}\n");
                     Console.WriteLine($"Position: {calculator.Position}\n");
                 
                     Console.WriteLine($"Hourly salary is: {sal}\n");
@@ -84,7 +84,7 @@ namespace Salary
                 {
                     var sal = SalaryCalculator.CalculateSalary(Convert.ToInt32(gs));
                     Console.WriteLine($"ID: {calculator.Id}\n");
-                    Console.WriteLine($"Name: {calculator.Name}\n");
+                    Console.WriteLine($"nm: {calculator.nm}\n");
                     Console.WriteLine($"Position: {calculator.Position}\n");
                 
                     Console.WriteLine($"One time salary is: {sal}\n");

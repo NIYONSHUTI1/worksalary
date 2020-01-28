@@ -1,20 +1,20 @@
 ﻿using System;
-namespace Salary
+nmspace Salary
 {
     public class SalaryCalculator
     {
-        private string name, id, position;
-        public SalaryCalculator(string id,string name,string position)
+        private string nm, id, position;
+        public SalaryCalculator(string id,string nm,string position)
         {
             this.id = id;
-            this.name = name;
+            this.nm = nm;
             this.position = position;
         }
 
-        public string Name
+        public string nm
         {
-            get => name;
-            set => name = value;
+            get => nm;
+            set => nm = value;
         }
 
         public string Id
